@@ -1,3 +1,9 @@
+:root {
+  --color-primary-violet: hsl(257, 40%, 49%);
+  --color-primary-soft-magenta: hsl(300, 69%, 71%);
+  --color-primary-not-so-soft-magenta: hsl(300, 69%, 55%);
+}
+
 *,
 *::before,
 *::after {
@@ -8,4 +14,17 @@
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 4em;
+  background-image: url("../img/bg-desktop.svg");
+  background-size: cover;
+  background-color: var(--color-primary-violet);
+  background-position: center;
 }
