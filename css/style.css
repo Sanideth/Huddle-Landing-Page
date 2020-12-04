@@ -12,6 +12,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 55%; } }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -24,12 +27,24 @@ body {
   background-size: cover;
   background-color: var(--color-primary-violet);
   background-position: center; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      background-image: url(../img/bg-mobile.svg);
+      justify-content: flex-start;
+      align-items: flex-start;
+      background-size: 100%;
+      background-position: top;
+      background-repeat: no-repeat; } }
 
 .header__logo {
   width: 20rem; }
 
 .main {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .main {
+      flex-direction: column;
+      margin-bottom: 4rem; } }
   .main__image-container {
     flex: 0 0 65%; }
   .main__image-mockup {
@@ -38,11 +53,17 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding-top: 6em; }
+    padding-top: 5em; }
+    @media only screen and (max-width: 56.25em) {
+      .main__content {
+        text-align: center; } }
   .main__text {
     color: #fff;
     font-size: 1.6rem;
     line-height: 1.8; }
+    @media only screen and (max-width: 56.25em) {
+      .main__text {
+        font-size: 2rem; } }
 
 .footer {
   display: flex;
@@ -52,6 +73,10 @@ body {
     align-self: flex-end;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__social-media-icons-container {
+        align-self: center;
+        margin-bottom: 3rem; } }
     .footer__social-media-icons-container > *:not(:last-child) {
       margin-right: 1rem; }
   .footer__social-media-icon-container {
@@ -80,12 +105,19 @@ body {
     transition: all 0.1s; }
 
 .container {
-  max-width: 130rem; }
+  max-width: 130rem;
+  margin: auto 0; }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      margin: 0; } }
 
 .heading-primary {
   font-family: "Poppins", sans-serif;
   font-size: 4rem;
   color: #fff; }
+  @media only screen and (max-width: 75em) {
+    .heading-primary {
+      font-size: 3rem; } }
 
 .btn {
   cursor: pointer;
@@ -101,6 +133,11 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   transition: all 0.1s; }
+  @media only screen and (max-width: 56.25em) {
+    .btn-register {
+      align-self: center;
+      padding-left: 6em;
+      padding-right: 6em; } }
   .btn-register:hover {
     background-color: var(--color-primary-soft-magenta);
     color: #fff; }

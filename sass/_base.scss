@@ -4,6 +4,9 @@
   --color-primary-not-so-soft-magenta: hsl(300, 69%, 55%);
 }
 
+$bp-large: 75em; //bp at 1200px
+$bp-medium: 56.25em; //bp at 900px
+
 *,
 *::before,
 *::after {
@@ -14,6 +17,9 @@
 
 html {
   font-size: 62.5%;
+  @media only screen and (max-width: $bp-large) {
+    font-size: 55%;
+  }
 }
 
 body {
@@ -27,4 +33,13 @@ body {
   background-size: cover;
   background-color: var(--color-primary-violet);
   background-position: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    background-image: url(../img/bg-mobile.svg);
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
 }
