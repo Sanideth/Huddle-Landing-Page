@@ -41,6 +41,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   &__social-media-icons-container {
     align-self: flex-end;
     display: flex;
@@ -84,5 +85,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.1s;
+  }
+
+  &__attribution {
+    color: #fff;
+
+    a {
+      color: #fff;
+      font-style: italic;
+
+      &:hover {
+        color: var(--color-primary-not-so-soft-magenta);
+      }
+    }
   }
 }
