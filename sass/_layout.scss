@@ -89,11 +89,11 @@
 
   &__attribution {
     color: #fff;
+    font-size: 1.6rem;
 
     a {
-      color: #fff;
+      color: inherit;
       font-style: italic;
-
       &:hover {
         color: var(--color-primary-not-so-soft-magenta);
       }

@@ -108,9 +108,10 @@ a {
     transform: translate(-50%, -50%);
     transition: all 0.1s; }
   .footer__attribution {
-    color: #fff; }
+    color: #fff;
+    font-size: 1.6rem; }
     .footer__attribution a {
-      color: #fff;
+      color: inherit;
       font-style: italic; }
       .footer__attribution a:hover {
         color: var(--color-primary-not-so-soft-magenta); }
